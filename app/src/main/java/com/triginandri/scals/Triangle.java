@@ -85,12 +85,12 @@ public class Triangle extends Fragment {
 
     public String keliling(float tinggi, float alas){
         float miring = Math.round((float) Math.sqrt(Math.pow(alas,2) + Math.pow(tinggi,2)));
-        //rumus keliling segitiga sama kaki
-//        float keliling = alas + miring + miring;
+        //rumus keliling segitiga sama kaki & sama sisi
+        float keliling = alas + miring + miring;
         //rumus keliling segitiga sama sisi
 //        float keliling = alas + miring + alas;
         //rumus keliling segitiga siku2
-        float keliling = alas + tinggi + miring;
+//        float keliling = alas + tinggi + miring;
         return Float.toString(keliling);
     }
 }
